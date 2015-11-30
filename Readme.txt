@@ -1,0 +1,27 @@
+2015/06/16
+	Update iOS SDK
+2014/12/03
+	To get the latest bR301 SDK, you also can access github to get whole source code of bR301, the link is below:https://github.com/FeitianSmartcardReader
+2014/10/8
+	Add non-PCSC api
+	Add comments(readerInterfaceDidChange/cardInterfaceDidDetach) of readerInterfaceDidChange in ReaderInterface.h
+2014/8/15
+	Add bR301, iR301, iPad casing reader support
+	Modify source code to improve speed of get card/reader status of bR301
+	Fixed bug when application access open/close session at same time, add mutex in source code
+	Fixed minor bugs in arm64
+	Fixed minor bugs in SCardListReader API
+	Fixed minor bugs when running application in background
+2014/05/12
+	Support background running
+	Fixed bug on iOS
+2013/08/19
+	
+	Upgrade SDK, to support new bR301 which firmware is 2.0
+
+
+2013/04/21
+	Updated sample code
+	Add developer Guide and FAQ
+2013/02/20
+	Library supported armv6/7/7s
