@@ -1,3 +1,6 @@
+2015/12/25
+	Fix bug when create monitor to check reader/card slot status.
+	Update lib version to 1.31.1, new lib add i386 and x64 support, the totally arch will included (armv7,armv7s,arm64,i386,x64)
 2015/06/16
 	Update iOS SDK
 2014/12/03
