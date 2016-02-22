@@ -36,7 +36,7 @@ extern "C"
 #ifndef __COREFOUNDATION_CFPLUGINCOM__
     typedef uint32_t ULONG;
     typedef void *LPVOID;
-//haozi err?    typedef int16_t BOOL;
+
 #endif
 
     typedef uint32_t *PULONG;
@@ -94,9 +94,9 @@ extern "C"
 #define SCARD_PCI_T0	(&g_rgSCardT0Pci) /**< protocol control information (PCI) for T=0 */
 #define SCARD_PCI_T1	(&g_rgSCardT1Pci) /**< protocol control information (PCI) for T=1 */
 #define SCARD_PCI_RAW	(&g_rgSCardRawPci) /**< protocol control information (PCI) for RAW protocol */
+
     
-    /** error codes from http://msdn.microsoft.com/en-us/library/aa924526.aspx
-     */
+/** error codes from http://msdn.microsoft.com/en-us/library/aa924526.aspx */
 #define SCARD_S_SUCCESS			((LONG)0x00000000) /**< No error was encountered. */
 #define SCARD_F_INTERNAL_ERROR		((LONG)0x80100001) /**< An internal consistency check failed. */
 #define SCARD_E_CANCELLED		((LONG)0x80100002) /**< The action was cancelled by an SCardCancel request. */

@@ -17,7 +17,8 @@
 		B57149B71C1413A500DDCEAF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57149AE1C1413A500DDCEAF /* Info.plist */; };
 		B57149B81C1413A500DDCEAF /* Utils.c in Sources */ = {isa = PBXBuildFile; fileRef = B57149AF1C1413A500DDCEAF /* Utils.c */; };
 		B57149B91C1413A500DDCEAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57149B11C1413A500DDCEAF /* ViewController.swift */; };
-		B57149C31C14148F00DDCEAF /* libiRockey301_ccid_ST_V1.30.0_debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B57149C11C14148F00DDCEAF /* libiRockey301_ccid_ST_V1.30.0_debug.a */; };
+		B59B3C581C7ABE6700330677 /* iRockey301_ccid_ST_V1.31.2_debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B59B3C561C7ABE6700330677 /* iRockey301_ccid_ST_V1.31.2_debug.a */; };
+		B59B3C591C7ABE6700330677 /* iRockey301_ccid_ST_V1.31.2_release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B59B3C571C7ABE6700330677 /* iRockey301_ccid_ST_V1.31.2_release.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,11 +54,13 @@
 		B57149AF1C1413A500DDCEAF /* Utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Utils.c; sourceTree = "<group>"; };
 		B57149B01C1413A500DDCEAF /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		B57149B11C1413A500DDCEAF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B57149BC1C14148F00DDCEAF /* ft301u.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ft301u.h; sourceTree = "<group>"; };
-		B57149BD1C14148F00DDCEAF /* ReaderInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderInterface.h; sourceTree = "<group>"; };
-		B57149BE1C14148F00DDCEAF /* winscard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winscard.h; sourceTree = "<group>"; };
-		B57149BF1C14148F00DDCEAF /* wintypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wintypes.h; sourceTree = "<group>"; };
-		B57149C11C14148F00DDCEAF /* libiRockey301_ccid_ST_V1.30.0_debug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiRockey301_ccid_ST_V1.30.0_debug.a; sourceTree = "<group>"; };
+		B59B3C511C7ABE6700330677 /* ft301u.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ft301u.h; sourceTree = "<group>"; };
+		B59B3C521C7ABE6700330677 /* ReaderInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderInterface.h; sourceTree = "<group>"; };
+		B59B3C531C7ABE6700330677 /* winscard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winscard.h; sourceTree = "<group>"; };
+		B59B3C541C7ABE6700330677 /* wintypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wintypes.h; sourceTree = "<group>"; };
+		B59B3C561C7ABE6700330677 /* iRockey301_ccid_ST_V1.31.2_debug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = iRockey301_ccid_ST_V1.31.2_debug.a; sourceTree = "<group>"; };
+		B59B3C571C7ABE6700330677 /* iRockey301_ccid_ST_V1.31.2_release.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = iRockey301_ccid_ST_V1.31.2_release.a; sourceTree = "<group>"; };
+		B59B3C5A1C7ABEB700330677 /* wintypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = wintypes.h; path = "../../Library/PCSC API/include/wintypes.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +68,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B57149C31C14148F00DDCEAF /* libiRockey301_ccid_ST_V1.30.0_debug.a in Frameworks */,
 				B57149A41C140E1200DDCEAF /* ExternalAccessory.framework in Frameworks */,
+				B59B3C591C7ABE6700330677 /* iRockey301_ccid_ST_V1.31.2_release.a in Frameworks */,
 				338DEFAF1C0D521D00EA021D /* CoreBluetooth.framework in Frameworks */,
+				B59B3C581C7ABE6700330677 /* iRockey301_ccid_ST_V1.31.2_debug.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +95,8 @@
 		333553BB1C0BF04800C839B5 = {
 			isa = PBXGroup;
 			children = (
-				B57149BA1C14148F00DDCEAF /* SDK */,
+				B59B3C5A1C7ABEB700330677 /* wintypes.h */,
+				B59B3C4E1C7ABE6700330677 /* Library */,
 				B57149A51C1413A500DDCEAF /* bR301_by_Swift_Demo */,
 				B57149A31C140E1200DDCEAF /* ExternalAccessory.framework */,
 				338DEFAE1C0D521D00EA021D /* CoreBluetooth.framework */,
@@ -126,30 +131,40 @@
 			path = bR301_by_Swift_Demo;
 			sourceTree = "<group>";
 		};
-		B57149BA1C14148F00DDCEAF /* SDK */ = {
+		B59B3C4E1C7ABE6700330677 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				B57149BB1C14148F00DDCEAF /* include */,
-				B57149C01C14148F00DDCEAF /* lib */,
+				B59B3C4F1C7ABE6700330677 /* PCSC API */,
 			);
-			path = SDK;
+			name = Library;
+			path = ../../Library;
 			sourceTree = "<group>";
 		};
-		B57149BB1C14148F00DDCEAF /* include */ = {
+		B59B3C4F1C7ABE6700330677 /* PCSC API */ = {
 			isa = PBXGroup;
 			children = (
-				B57149BC1C14148F00DDCEAF /* ft301u.h */,
-				B57149BD1C14148F00DDCEAF /* ReaderInterface.h */,
-				B57149BE1C14148F00DDCEAF /* winscard.h */,
-				B57149BF1C14148F00DDCEAF /* wintypes.h */,
+				B59B3C501C7ABE6700330677 /* include */,
+				B59B3C551C7ABE6700330677 /* lib */,
+			);
+			path = "PCSC API";
+			sourceTree = "<group>";
+		};
+		B59B3C501C7ABE6700330677 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B59B3C511C7ABE6700330677 /* ft301u.h */,
+				B59B3C521C7ABE6700330677 /* ReaderInterface.h */,
+				B59B3C531C7ABE6700330677 /* winscard.h */,
+				B59B3C541C7ABE6700330677 /* wintypes.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		B57149C01C14148F00DDCEAF /* lib */ = {
+		B59B3C551C7ABE6700330677 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				B57149C11C14148F00DDCEAF /* libiRockey301_ccid_ST_V1.30.0_debug.a */,
+				B59B3C561C7ABE6700330677 /* iRockey301_ccid_ST_V1.31.2_debug.a */,
+				B59B3C571C7ABE6700330677 /* iRockey301_ccid_ST_V1.31.2_release.a */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -435,10 +450,7 @@
 				INFOPLIST_FILE = bR301_by_Swift_Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SDK/lib",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ftsafe.ir301.Demo;
 				PRODUCT_NAME = "iR301 demo";
 				SWIFT_OBJC_BRIDGING_HEADER = "bR301_by_Swift_Demo/bR301_by_Swift-Bridging-Header.h";
@@ -457,10 +469,7 @@
 				INFOPLIST_FILE = bR301_by_Swift_Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SDK/lib",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ftsafe.ir301.Demo;
 				PRODUCT_NAME = "iR301 demo";
 				SWIFT_OBJC_BRIDGING_HEADER = "bR301_by_Swift_Demo/bR301_by_Swift-Bridging-Header.h";
