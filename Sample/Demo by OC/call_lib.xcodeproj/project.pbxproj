@@ -29,7 +29,8 @@
 		50BAB71B157CB791000B037C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BAB718157CB791000B037C /* main.m */; };
 		5238A36813A5B75B00C88B01 /* disopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5238A36613A5B75B00C88B01 /* disopWindow.m */; };
 		52B526A213A7311D001E2263 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B526A113A7311D001E2263 /* ExternalAccessory.framework */; };
-		B58CCE841C2D2D0200205C9E /* iRockey301_ccid_ST_V1.31.1_release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B58CCE831C2D2D0200205C9E /* iRockey301_ccid_ST_V1.31.1_release.a */; };
+		B514AF821C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B514AF801C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_debug.a */; };
+		B514AF831C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B514AF811C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_release.a */; };
 		B5F234491BB9183600C0B7CD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F234481BB9183600C0B7CD /* Default-568h@2x.png */; };
 		D32D321A192CAE520087CFCE /* OK.png in Resources */ = {isa = PBXBuildFile; fileRef = D32D3219192CAE520087CFCE /* OK.png */; };
 		D33063A619346C2E001C247E /* op_bg_detail_en.png in Resources */ = {isa = PBXBuildFile; fileRef = D33063A519346C2E001C247E /* op_bg_detail_en.png */; };
@@ -63,11 +64,12 @@
 		50BAB725157CB8A4000B037C /* call_lib_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = call_lib_Prefix.pch; sourceTree = "<group>"; };
 		5238A36613A5B75B00C88B01 /* disopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = disopWindow.m; sourceTree = "<group>"; };
 		52B526A113A7311D001E2263 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
-		B5289A531C19D162002329BA /* ft301u.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ft301u.h; sourceTree = "<group>"; };
-		B5289A541C19D162002329BA /* ReaderInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderInterface.h; sourceTree = "<group>"; };
-		B5289A551C19D162002329BA /* winscard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winscard.h; sourceTree = "<group>"; };
-		B5289A561C19D162002329BA /* wintypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wintypes.h; sourceTree = "<group>"; };
-		B58CCE831C2D2D0200205C9E /* iRockey301_ccid_ST_V1.31.1_release.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = iRockey301_ccid_ST_V1.31.1_release.a; sourceTree = "<group>"; };
+		B514AF7B1C7ED0E5000859C3 /* ft301u.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ft301u.h; sourceTree = "<group>"; };
+		B514AF7C1C7ED0E5000859C3 /* ReaderInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderInterface.h; sourceTree = "<group>"; };
+		B514AF7D1C7ED0E5000859C3 /* winscard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winscard.h; sourceTree = "<group>"; };
+		B514AF7E1C7ED0E5000859C3 /* wintypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wintypes.h; sourceTree = "<group>"; };
+		B514AF801C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_debug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = iRockey301_ccid_ST_V1.31.2_debug.a; sourceTree = "<group>"; };
+		B514AF811C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_release.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = iRockey301_ccid_ST_V1.31.2_release.a; sourceTree = "<group>"; };
 		B5F234481BB9183600C0B7CD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D32D3219192CAE520087CFCE /* OK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OK.png; path = Resource/pic/OK.png; sourceTree = "<group>"; };
 		D33063A519346C2E001C247E /* op_bg_detail_en.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = op_bg_detail_en.png; path = Resource/pic/op_bg_detail_en.png; sourceTree = "<group>"; };
@@ -81,10 +83,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				B514AF831C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_release.a in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				B58CCE841C2D2D0200205C9E /* iRockey301_ccid_ST_V1.31.1_release.a in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				52B526A213A7311D001E2263 /* ExternalAccessory.framework in Frameworks */,
+				B514AF821C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_debug.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +127,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				B5289A501C19D162002329BA /* Library */,
+				B514AF781C7ED0E5000859C3 /* Library */,
 				B5F234481BB9183600C0B7CD /* Default-568h@2x.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -177,39 +180,40 @@
 			name = png;
 			sourceTree = "<group>";
 		};
-		B5289A501C19D162002329BA /* Library */ = {
+		B514AF781C7ED0E5000859C3 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				B5289A511C19D162002329BA /* PCSC API */,
+				B514AF791C7ED0E5000859C3 /* PCSC API */,
 			);
 			name = Library;
-			path = ../Library;
+			path = ../../Library;
 			sourceTree = "<group>";
 		};
-		B5289A511C19D162002329BA /* PCSC API */ = {
+		B514AF791C7ED0E5000859C3 /* PCSC API */ = {
 			isa = PBXGroup;
 			children = (
-				B5289A521C19D162002329BA /* include */,
-				B5289A571C19D162002329BA /* lib */,
+				B514AF7A1C7ED0E5000859C3 /* include */,
+				B514AF7F1C7ED0E5000859C3 /* lib */,
 			);
 			path = "PCSC API";
 			sourceTree = "<group>";
 		};
-		B5289A521C19D162002329BA /* include */ = {
+		B514AF7A1C7ED0E5000859C3 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				B5289A531C19D162002329BA /* ft301u.h */,
-				B5289A541C19D162002329BA /* ReaderInterface.h */,
-				B5289A551C19D162002329BA /* winscard.h */,
-				B5289A561C19D162002329BA /* wintypes.h */,
+				B514AF7B1C7ED0E5000859C3 /* ft301u.h */,
+				B514AF7C1C7ED0E5000859C3 /* ReaderInterface.h */,
+				B514AF7D1C7ED0E5000859C3 /* winscard.h */,
+				B514AF7E1C7ED0E5000859C3 /* wintypes.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		B5289A571C19D162002329BA /* lib */ = {
+		B514AF7F1C7ED0E5000859C3 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				B58CCE831C2D2D0200205C9E /* iRockey301_ccid_ST_V1.31.1_release.a */,
+				B514AF801C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_debug.a */,
+				B514AF811C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_release.a */,
 			);
 			path = lib;
 			sourceTree = "<group>";

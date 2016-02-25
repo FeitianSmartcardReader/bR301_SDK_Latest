@@ -131,7 +131,6 @@ class communicationOperate: NSObject {
             
         } else {
             
-//            respData.appendBytes(resp, length:Int(resplen - 2))
             //display all return data include status words
             respData.appendBytes(resp, length:Int(resplen));
             
@@ -218,11 +217,11 @@ class communicationOperate: NSObject {
     {
         
         let serialBuffer = UnsafeMutablePointer<Int8>.alloc(20)
-        var serialLength : DWORD = 20
+        let serialLength : DWORD = 20
         let serialData:NSMutableData = NSMutableData()
         
         serialBuffer.initialize(0)
-        iRet = FtGetSerialNum(0,&serialLength, serialBuffer);
+        iRet = FtGetSerialNum(0,serialLength, serialBuffer);
         
         if(iRet != 0 ){
             error = "Get serial number error \(iRet).";
