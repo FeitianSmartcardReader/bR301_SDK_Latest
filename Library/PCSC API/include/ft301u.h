@@ -1,25 +1,3 @@
- /*
- * Support for bR301(Bluetooth) smart card reader
- *
- * ft301u.h: header file for ft_ccid.c
- *
- * Copyright (C) Feitian 2014, Ben <ben@ftsafe.com>
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 2.1 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Lesser General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General Public
- * License along with this library; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- */
-
 /**
  * @file
  * @This isfeitian's private cmd.
@@ -31,11 +9,21 @@
 
 #include "wintypes.h"
 
+
+typedef enum READERTYPE{
+    READER_UNKOWN = 0,
+    READER_bR301,
+    READER_iR301U_DOCK,
+    READER_iR301U_LIGHTING
+    
+}READERTYPE;
+
 #ifdef __cplusplus
 extern "C"
 {
 #endif
     LONG SCARD_CTL_CODE(unsigned int code);
+	
     /*
     Function: FtGetSerialNum
  
@@ -47,7 +35,6 @@ extern "C"
     Description:
     This function userd to get serial number of iR301.
     */
-    
     LONG FtGetSerialNum(SCARDHANDLE hCard, unsigned int  length,
                                       char * buffer);
     /*
@@ -156,7 +143,6 @@ extern "C"
      Parameters:
      bDidEnter 	IN	 must be set 1
                      
-     
      Description:
      Use this method to release monitor thread of reader status
      
@@ -178,34 +164,44 @@ extern "C"
      Description:
      This function userd to transmit data with SLE4442 card
      */
-    
     LONG FtSle4442Cmd(SCARDHANDLE hCard,LPCBYTE pbCmd,DWORD bLengthToRead,BYTE bIsClockNum,LPBYTE pbRecvBuffer,LPDWORD pcbRecvLength);
-    LONG FtGetDevVer( SCARDCONTEXT hContext,char *firmwareRevision,char *hardwareRevision);
-    /*
+    
+	/*
      Function: FtGetLibVersion
      
      Parameters:
      buffer :buffer of libVersion
-     
      
      Description:
      Get the Current Lib Version
      
      */
     void FtGetLibVersion (char *buffer);
+    
+     /*
+     Function: FtGetDevVer
+     
+     Parameters:
+     hContext           IN      Connection made from SCardConnect(Ignore this parameter and just set to zero in iOS system)
+     firmwareRevision 	INOUT	IN: The buffer  OUT: The real buffer contain return version data
+     hardwareRevision 	INOUT   IN: The buffer  OUT: The real buffer contain return version data
+     
+     Description:
+     Get the current Reader firmware Version and hardware Version   
+     */
+    LONG FtGetDevVer( SCARDCONTEXT hContext,char *firmwareRevision,char *hardwareRevision);
 	
-	/*
+	 /*
      Function: FtGetCurrentReaderType
      
      Parameters:
-     readerType : Get reader type
-     
+     readerType :   INOUT	IN: int value  OUT: The real current reader type
      
      Description:
-     Get the Current reader type
-     
+     Get current Reader Type
      */
-	LONG FtGetCurrentReaderType(unsigned int *readerType);
+    
+    LONG FtGetCurrentReaderType(unsigned int *readerType);
     
 #ifdef __cplusplus
 }
