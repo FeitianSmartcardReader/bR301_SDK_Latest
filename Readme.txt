@@ -1,4 +1,6 @@
-﻿2016/4/18
+﻿2016/9/13
+	Add auto pps
+2016/4/18
 	Update iOS SDK, add get reader type API - FtGetCurrentReaderType.
 2016/2/24
 	Fix SCardGetStatusChange() may (not always, but frequently) return “SCARD_E_READER_UNAVAILABLE” problem, new lib version is 1.31.2
