@@ -1,4 +1,6 @@
-﻿2016/9/18
+2016/11/04
+	update sdk to 1.31.6, the latest version has add customer OEM string
+2016/9/18
 	Add auto pps
 2016/4/18
 	Update iOS SDK, add get reader type API - FtGetCurrentReaderType.
