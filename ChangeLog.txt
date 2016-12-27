@@ -1,0 +1,95 @@
+2016/04/18
+	Rearrange the SDK
+	Update iOS SDK, add get reader type API - FtGetCurrentReaderType.
+2015/12/01
+	To avoid customer cannot using latest library, we do publish all SDK into github, we will keep update on github, you can add watch to follow up. 
+2015/9/18
+	Update android SDK, support android 5.0+
+2015/06/16/
+	Add new fireware into SDK, the new fireware add new bR301_C63 version support with has better perfermance
+	Update iOS SDK	
+2015/01/30
+	Update Driver folder 
+2014/10/08
+	Update Android SDK
+	Update iOS SDK
+2014/8/15
+	Updated iOS SDK
+2014/8/7
+	Fixed windows driver file format, to avoid antivirus software reported that the virus
+2014/7/17
+	Update upgrade tool, now the tool can support Windows 8 and bug fixed
+2014/6/4
+	Updated FAQ
+	Updated datasheet, add EMV Level 1 certification
+	Add EMV Level 1 certificate in SDK
+	Updated Android SDK
+2014/5/12
+	Updated iOS SDK and demo application
+	Add latest firmware v1.45(EMV Level 1 certified) into SDK
+	Fixed bugs in upgrade tool
+2014/05/04
+	Fixed bugs in PC driver
+	Updated Android SDK
+2014/02/18
+	Modified bugs in update tool
+	Add latest firmware v1.41 in SDK
+2014/02/10
+	Modify install manual in DRIVER floder
+	Add install video in DRIVER for MAC OS X, please check readme to get web link
+2014/01/22
+	The windows 7/8 x64 beta version just publish
+2013/12/30
+	SDK v2.1 only can work with bR301-2.0 firmware
+	Add windows x86 driver(through bluetooth connect with Reader), it is PC/SC standard, can using PC/SC API to opeartion reader.
+	Fixed bug in android SDK
+2013/11/06 - bR301 2.0
+	Upgrade Android SDK - update sample code
+	Add bR301 driver for MAC OS X,customer can throgh Bluetooth to connect with PC
+	Add bR301v2 datasheet to SDK
+2013/08/19
+
+ 
+Android/iOS:
+	
+	The SDK has upgrade, the new SDK support bR301 UB v2.0+.
+	
+	Current SDK doesn't support old reader anymore
+	
+	The DUKPT only work on android and iOS, without PC and windows Phone,if you have this requirements, please contact FEITIAN.
+
+
+
+Hardware and firmware:
+
+	1. DUKPT(encryption functions) in firmware, support iOS
+
+	2. Support firmware upgrade through USB port on PC
+
+	3. Support UID(User ID) management
+
+	4. Add four lights to inform reader's status(white/red/yellow/blue),(charging batter use red color, low battery use yellow, bluetooth use blue, transfer status use white )
+
+	5. Add low power, fully speed can work at least 18 hours. Standby time at least 100 hours.
+
+	6. The firmware can't be read, Support Anti-reverse engineering, Self-protection.
+
+	7. Support short-circuit protection and over-current protection card
+
+	8. Can work with iOS(Bluetooth) and Mac OS x(usb port, bluetooth port is developing, will release end of September in 2013)
+
+
+
+
+2013/04/21
+Add developer guide in Android/iOS/Blackberry SDK
+The new bR301 can support firmware update function
+
+2013/02/20
+First version of bR301
+Android:
+	Fixed bugs of SDK
+iOS:
+	Supported multi-thread to get card reader status
+	Supported iOS 6.1
+	Fixed bugs
