@@ -1,7 +1,9 @@
-﻿2016/11/04
-	
+﻿2017/02/22
+	Update to 1.32.0
+	1.31.9 - Fix bug while in close session, the behave is using bluetooth printer with bR301 and iR301, the reader session will close.
+	1.32.0 - Fix block issue while in reading data from reader, the behave is random get 0x80100016 error, the error only happen with iR301 series
+2016/11/04
 	Update sdk to 1.31.6, the latest version has add customer OEM string
-
 2016/9/18
 	Add auto pps
 2016/4/18
