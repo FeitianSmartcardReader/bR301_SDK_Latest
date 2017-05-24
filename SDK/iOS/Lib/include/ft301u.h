@@ -9,7 +9,6 @@
 
 #include "wintypes.h"
 
-
 typedef enum READERTYPE{
     READER_UNKOWN = 0,
     READER_bR301,
@@ -22,8 +21,9 @@ typedef enum READERTYPE{
 extern "C"
 {
 #endif
+    
+    
     LONG SCARD_CTL_CODE(unsigned int code);
-	
     /*
     Function: FtGetSerialNum
  
@@ -35,6 +35,7 @@ extern "C"
     Description:
     This function userd to get serial number of iR301.
     */
+    
     LONG FtGetSerialNum(SCARDHANDLE hCard, unsigned int  length,
                                       char * buffer);
     /*
@@ -79,7 +80,17 @@ extern "C"
      */
     LONG FtSetTimeout(SCARDCONTEXT hContext, DWORD dwTimeout);
     
-    
+    /*
+     Function: FT_AutoTurnOffReader
+     
+     Parameters:
+     isOpen 	  IN  the switch is able to open/close the  automatic shutdown function of reader.
+     
+     Description:
+     The function is able to open/close the  automatic shutdown function  of reader.
+     
+     */
+    LONG FT_AutoTurnOffReader(BOOL isOpen);
     //for dukpt
     /*
      Function: FtDukptInit
@@ -143,42 +154,14 @@ extern "C"
      Parameters:
      bDidEnter 	IN	 must be set 1
                      
+     
      Description:
      Use this method to release monitor thread of reader status
      
      */
     void FtDidEnterBackground(unsigned int bDidEnter);
+   
     /*
-     Function: FtSle4442Cmd
-     
-     Parameters:
-     hCard 			IN 		Connection made from SCardConnect(Ignore this parameter and just set to zero in iOS system)
-     pbCmd          IN      SLE4442 cmd(3 byte) which are listed in sle4442 cmd table
-     bLengthToRead  IN      The data length which reading from the card
-     bIsClockNum    IN      If bIsClockNum = 1, then bToReadLength should be '1' and that means the returned one byte is
-     the clock number for card completing the command.
-     If bIsClockNum = 0, firmware don't care it.
-     pbRecvBuffer   OUT		Return data
-     pcbRecvLength	INOUT	IN:length of pbRecvBuffer OUT: length of return data
-     
-     Description:
-     This function userd to transmit data with SLE4442 card
-     */
-    LONG FtSle4442Cmd(SCARDHANDLE hCard,LPCBYTE pbCmd,DWORD bLengthToRead,BYTE bIsClockNum,LPBYTE pbRecvBuffer,LPDWORD pcbRecvLength);
-    
-	/*
-     Function: FtGetLibVersion
-     
-     Parameters:
-     buffer :buffer of libVersion
-     
-     Description:
-     Get the Current Lib Version
-     
-     */
-    void FtGetLibVersion (char *buffer);
-    
-     /*
      Function: FtGetDevVer
      
      Parameters:
@@ -187,18 +170,36 @@ extern "C"
      hardwareRevision 	INOUT   IN: The buffer  OUT: The real buffer contain return version data
      
      Description:
-     Get the current Reader firmware Version and hardware Version   
+     Get the current Reader firm Version and hardware Version
+     
      */
     LONG FtGetDevVer( SCARDCONTEXT hContext,char *firmwareRevision,char *hardwareRevision);
-	
-	 /*
+    
+    
+    /*
+     Function: FtGetLibVersion
+     
+     Parameters:
+     buffer :    INOUT	IN: The buffer  OUT: The real buffer contain lib version data
+     
+     
+     Description:
+     Get the Current Lib Version
+     
+     */
+    
+    void FtGetLibVersion (char *buffer);
+    
+    /*
      Function: FtGetCurrentReaderType
      
      Parameters:
      readerType :   INOUT	IN: int value  OUT: The real current reader type
      
+     
      Description:
      Get current Reader Type
+     
      */
     
     LONG FtGetCurrentReaderType(unsigned int *readerType);

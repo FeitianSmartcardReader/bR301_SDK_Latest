@@ -1,4 +1,8 @@
-﻿2017/02/22
+﻿2017/05/24
+	Update lib to 1.32.3
+	       - Add customer OEM API to switch auto turn off function, the function is no communication data between App with reader, then the reader will do turn off automatically
+	       - Fix bug when call ScardStatus API get wrong reader name, now make it same as SCardListReaders “FT smartcard reader”
+2017/02/22
 	Update to 1.32.0
 	1.31.9 - Fix bug while in close session, the behave is using bluetooth printer with bR301 and iR301, the reader session will close.
 	1.32.0 - Fix block issue while in reading data from reader, the behave is random get 0x80100016 error, the error only happen with iR301 series
