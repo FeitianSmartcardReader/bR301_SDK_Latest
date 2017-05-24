@@ -1,5 +1,6 @@
 ﻿2017/05/24
 	Update lib to 1.32.3
+	1.32.3 - Fix bR301 issue when switch App to background, at this time do replug card, the lib doesn't response in time.
 	       - Add customer OEM API to switch auto turn off function, the function is no communication data between App with reader, then the reader will do turn off automatically
 	       - Fix bug when call ScardStatus API get wrong reader name, now make it same as SCardListReaders “FT smartcard reader”
 2017/02/22
