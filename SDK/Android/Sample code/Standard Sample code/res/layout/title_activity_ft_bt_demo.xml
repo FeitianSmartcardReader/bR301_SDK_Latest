@@ -25,7 +25,7 @@
                     android:id="@+id/ESSreceive"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="数据显示"
+                    android:text="Data display"
                     android:textSize="20dp" />
 
                 <EditText
@@ -82,7 +82,7 @@
                     android:id="@+id/deviceTextView"
                     android:layout_width="245dp"
                     android:layout_height="wrap_content"
-                    android:text="设备连接"
+                    android:text="Device connection"
                     android:textSize="20dip" />
             </LinearLayout>
 
