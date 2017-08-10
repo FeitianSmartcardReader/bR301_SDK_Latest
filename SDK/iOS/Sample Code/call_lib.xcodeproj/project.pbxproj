@@ -29,8 +29,7 @@
 		50BAB71B157CB791000B037C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BAB718157CB791000B037C /* main.m */; };
 		5238A36813A5B75B00C88B01 /* disopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5238A36613A5B75B00C88B01 /* disopWindow.m */; };
 		52B526A213A7311D001E2263 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B526A113A7311D001E2263 /* ExternalAccessory.framework */; };
-		B514AF821C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B514AF801C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_debug.a */; };
-		B514AF831C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B514AF811C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_release.a */; };
+		B5D9B8031F3C4F20008BCE17 /* libiRockey301_ccid_V1.32.3_debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D9B8011F3C4F20008BCE17 /* libiRockey301_ccid_V1.32.3_debug.a */; };
 		B5F234491BB9183600C0B7CD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F234481BB9183600C0B7CD /* Default-568h@2x.png */; };
 		D32D321A192CAE520087CFCE /* OK.png in Resources */ = {isa = PBXBuildFile; fileRef = D32D3219192CAE520087CFCE /* OK.png */; };
 		D33063A619346C2E001C247E /* op_bg_detail_en.png in Resources */ = {isa = PBXBuildFile; fileRef = D33063A519346C2E001C247E /* op_bg_detail_en.png */; };
@@ -64,12 +63,11 @@
 		50BAB725157CB8A4000B037C /* call_lib_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = call_lib_Prefix.pch; sourceTree = "<group>"; };
 		5238A36613A5B75B00C88B01 /* disopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = disopWindow.m; sourceTree = "<group>"; };
 		52B526A113A7311D001E2263 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
-		B514AF7B1C7ED0E5000859C3 /* ft301u.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ft301u.h; sourceTree = "<group>"; };
-		B514AF7C1C7ED0E5000859C3 /* ReaderInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderInterface.h; sourceTree = "<group>"; };
-		B514AF7D1C7ED0E5000859C3 /* winscard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winscard.h; sourceTree = "<group>"; };
-		B514AF7E1C7ED0E5000859C3 /* wintypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wintypes.h; sourceTree = "<group>"; };
-		B514AF801C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_debug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = iRockey301_ccid_ST_V1.31.2_debug.a; sourceTree = "<group>"; };
-		B514AF811C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_release.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = iRockey301_ccid_ST_V1.31.2_release.a; sourceTree = "<group>"; };
+		B5D9B7FC1F3C4F20008BCE17 /* ft301u.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ft301u.h; sourceTree = "<group>"; };
+		B5D9B7FD1F3C4F20008BCE17 /* ReaderInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderInterface.h; sourceTree = "<group>"; };
+		B5D9B7FE1F3C4F20008BCE17 /* winscard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winscard.h; sourceTree = "<group>"; };
+		B5D9B7FF1F3C4F20008BCE17 /* wintypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wintypes.h; sourceTree = "<group>"; };
+		B5D9B8011F3C4F20008BCE17 /* libiRockey301_ccid_V1.32.3_debug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiRockey301_ccid_V1.32.3_debug.a; sourceTree = "<group>"; };
 		B5F234481BB9183600C0B7CD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D32D3219192CAE520087CFCE /* OK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OK.png; path = Resource/pic/OK.png; sourceTree = "<group>"; };
 		D33063A519346C2E001C247E /* op_bg_detail_en.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = op_bg_detail_en.png; path = Resource/pic/op_bg_detail_en.png; sourceTree = "<group>"; };
@@ -82,12 +80,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D9B8031F3C4F20008BCE17 /* libiRockey301_ccid_V1.32.3_debug.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
-				B514AF831C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_release.a in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				52B526A213A7311D001E2263 /* ExternalAccessory.framework in Frameworks */,
-				B514AF821C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_debug.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,30 +189,31 @@
 		B514AF791C7ED0E5000859C3 /* PCSC API */ = {
 			isa = PBXGroup;
 			children = (
-				B514AF7A1C7ED0E5000859C3 /* include */,
-				B514AF7F1C7ED0E5000859C3 /* lib */,
+				B5D9B7FB1F3C4F20008BCE17 /* include */,
+				B5D9B8001F3C4F20008BCE17 /* lib */,
 			);
 			path = "PCSC API";
 			sourceTree = "<group>";
 		};
-		B514AF7A1C7ED0E5000859C3 /* include */ = {
+		B5D9B7FB1F3C4F20008BCE17 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				B514AF7B1C7ED0E5000859C3 /* ft301u.h */,
-				B514AF7C1C7ED0E5000859C3 /* ReaderInterface.h */,
-				B514AF7D1C7ED0E5000859C3 /* winscard.h */,
-				B514AF7E1C7ED0E5000859C3 /* wintypes.h */,
+				B5D9B7FC1F3C4F20008BCE17 /* ft301u.h */,
+				B5D9B7FD1F3C4F20008BCE17 /* ReaderInterface.h */,
+				B5D9B7FE1F3C4F20008BCE17 /* winscard.h */,
+				B5D9B7FF1F3C4F20008BCE17 /* wintypes.h */,
 			);
-			path = include;
+			name = include;
+			path = ../../iOS/Lib/include;
 			sourceTree = "<group>";
 		};
-		B514AF7F1C7ED0E5000859C3 /* lib */ = {
+		B5D9B8001F3C4F20008BCE17 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				B514AF801C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_debug.a */,
-				B514AF811C7ED0E5000859C3 /* iRockey301_ccid_ST_V1.31.2_release.a */,
+				B5D9B8011F3C4F20008BCE17 /* libiRockey301_ccid_V1.32.3_debug.a */,
 			);
-			path = lib;
+			name = lib;
+			path = ../../iOS/Lib/lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +243,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = PL9NCP8CG6;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "call_lib" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -330,6 +333,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = PL9NCP8CG6;
 				ENABLE_BITCODE = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -338,8 +342,8 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				LIBRARY_SEARCH_PATHS = /Users/ben/Documents/github/bR301_iOS/libs/SDK/lib/;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ftsafe.${PRODUCT_NAME:rfc1034identifier}.demo";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../Lib/lib/\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftsafe.iR301U.demo.1;
 				PRODUCT_NAME = iR301U;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -356,14 +360,15 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = PL9NCP8CG6;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = call_lib_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				LIBRARY_SEARCH_PATHS = /Users/ben/Documents/github/bR301_iOS/libs/SDK/lib/;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ftsafe.${PRODUCT_NAME:rfc1034identifier}.demo";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../Lib/lib/\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftsafe.iR301U.demo.1;
 				PRODUCT_NAME = iR301U;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
