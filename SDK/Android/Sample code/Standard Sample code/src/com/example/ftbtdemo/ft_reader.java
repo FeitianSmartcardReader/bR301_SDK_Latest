@@ -58,7 +58,9 @@ public class ft_reader{
 	public int getCardStatus() throws FtBlueReadException{
 		return inner_card.getcardStatus();
 	}
-	
+	public int setAutoOff(boolean isAutoOff){
+		return inner_card.FTSetAutoTurnOff(isAutoOff);
+	}
 	/**/
 	public int getSerialNum(byte[] serial,int serialLen[]){
 		return inner_card.FtGetSerialNum(serial, serialLen);

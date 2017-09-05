@@ -38,14 +38,14 @@ import com.feitian.readerdk.Tool.DK;
  * This is the main Activity that displays the current chat session.
  */
 public class BlueTooth extends Activity implements OnClickListener {
-	// 宏消息定义
+	// Define Macro Value
 	private static final boolean Debug = true;
 	private static final String TAG = "Bluetooth";
 	// Key names received from the BluetoothService Handler
 	public static final String DEVICE_NAME = "device_name";
 	public static final String TOAST = "toast";
 
-	// 控件、
+	// Controls 
 	private Button mSend;
 	private Button mList;
 	private Button mConnect;
@@ -56,13 +56,14 @@ public class BlueTooth extends Activity implements OnClickListener {
 	private Button mExit;
 	private Button mclearReceiveData;
 	private Button mGetCardSerialNum;
+	private Button mSetAutoOff;
 	private Button mWriteFlash;
 	private Button mReadFlash;
 	private Button mSendCmd;
 	// private Button mDisconnect;
 	private Button mGetStatus;
-	private EditText mEditSend;// 发送数据
-	private EditText mEditFlash;// 发送flash数据
+	private EditText mEditSend;// Send data
+	private EditText mEditFlash;// Send flash data
 	private EditText mEditReceive;
 	private Spinner deviceListSpinner;
 
@@ -130,6 +131,8 @@ public class BlueTooth extends Activity implements OnClickListener {
 		mGetStatus.setOnClickListener(this);
 		mGetCardSerialNum = (Button) findViewById(R.id.BGetSerial);
 		mGetCardSerialNum.setOnClickListener(this);
+		mSetAutoOff = (Button) findViewById(R.id.BSetAutoOff);
+		mSetAutoOff.setOnClickListener(this);
 
 		mWriteFlash = (Button) findViewById(R.id.BWriteFlash);
 		mWriteFlash.setOnClickListener(this);
@@ -153,7 +156,7 @@ public class BlueTooth extends Activity implements OnClickListener {
 		mSendCmd = (Button) findViewById(R.id.BSendCmd);
 		mSendCmd.setOnClickListener(this);
 
-		/* 获取 */
+		/* Get Bluetooth device list */
 		arrayForBlueToothDevice = new ArrayList<BluetoothDevice>();
 
 		list = new ArrayList<String>();
@@ -187,12 +190,12 @@ public class BlueTooth extends Activity implements OnClickListener {
 		
 		
 		
-		// step 2 为下拉列表定义一个适配器，用到定义的额list2
+		// step 2 Define a adapter for droplist
 		adapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_spinner_item, list3);
-		// step 3 select style for 下拉列表
+		// step 3 select style for droplist
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		// step 4 将适配器添加到下拉列表上
+		// step 4 Add adapter to droplist
 		devListSpinner2.setAdapter(adapter);
 
 		devListSpinner2
@@ -389,6 +392,17 @@ public class BlueTooth extends Activity implements OnClickListener {
 			serialNum[serialLen[0]] = '\0';
 			String str = new String(serialNum);
 			displayData("GetSerialNum", str);
+		} else if (v == mSetAutoOff){
+			int ret = mReader.setAutoOff(true);
+			
+			if(ret == DK.RETURN_SUCCESS){
+				displayData("SetAutoOff", "success");
+			}else if(ret == DK.IFD_NOT_SUPPORTED){
+				displayData("SetAutoOff", "not support");
+			}else{
+				displayData("SetAutoOff", "failed");
+			}
+			
 		} else if (v == mReadFlash) {
 			byte buf[] = new byte[512];
 			if (DK.RETURN_SUCCESS == mReader.readFlash(buf, 0, 255)) {
@@ -483,6 +497,7 @@ public class BlueTooth extends Activity implements OnClickListener {
 		mConnect.setEnabled(true);
 		mDisConnect.setEnabled(false);
 		mGetCardSerialNum.setEnabled(false);
+		mSetAutoOff.setEnabled(false);
 		mWriteFlash.setEnabled(false);
 		mReadFlash.setEnabled(false);
 		mSendCmd.setEnabled(false);
@@ -505,6 +520,7 @@ public class BlueTooth extends Activity implements OnClickListener {
 		mConnect.setEnabled(false);
 		mDisConnect.setEnabled(true);
 		mGetCardSerialNum.setEnabled(true);
+		mSetAutoOff.setEnabled(true);
 		mWriteFlash.setEnabled(true);
 		mReadFlash.setEnabled(true);
 		mSendCmd.setEnabled(false);
@@ -551,7 +567,7 @@ public class BlueTooth extends Activity implements OnClickListener {
 
 	private void displayData(String Tag, String text) {
 		SimpleDateFormat formatter = new SimpleDateFormat("  HH:mm:ss");
-		Date curDate = new Date(System.currentTimeMillis());// 获取当前时间
+		Date curDate = new Date(System.currentTimeMillis());//Get current date
 		String str = formatter.format(curDate);
 		if (text.length() > 0) {
 			mEditReceive.setText(mEditReceive.getText() + "From:" + Tag + str

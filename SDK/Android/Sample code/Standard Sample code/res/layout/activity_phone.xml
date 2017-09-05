@@ -93,7 +93,7 @@
 
             <Button
                 android:id="@+id/BGetStatus"
-                android:layout_width="175dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="GetStat"
                 android:textSize="20dip" />
@@ -103,6 +103,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SerialNum"
+                android:textSize="20dip" />
+            <Button
+                android:id="@+id/BSetAutoOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SetAutoOff"
                 android:textSize="20dip" />
         </LinearLayout>
 

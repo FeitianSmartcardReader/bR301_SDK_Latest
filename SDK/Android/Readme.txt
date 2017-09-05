@@ -1,3 +1,5 @@
+2017/09/05
+	Update Android SDK
 2016/10/17
         Fix auto PPS issue, update lib to 2.0.5
 2016/01/07

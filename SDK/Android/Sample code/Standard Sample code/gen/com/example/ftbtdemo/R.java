@@ -20,29 +20,30 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int BExit=0x7f080012;
+        public static final int BExit=0x7f080013;
         public static final int BGetAtr=0x7f080007;
         public static final int BGetSerial=0x7f080009;
         public static final int BGetStatus=0x7f080008;
         public static final int BList=0x7f080001;
         public static final int BPowerOff=0x7f080006;
         public static final int BPowerOn=0x7f080005;
-        public static final int BReadFlash=0x7f08000f;
-        public static final int BSelectBlue=0x7f080015;
-        public static final int BSendCmd=0x7f08000c;
-        public static final int BSendData=0x7f08000a;
-        public static final int BWriteFlash=0x7f08000e;
-        public static final int BclearReceiveData=0x7f080011;
+        public static final int BReadFlash=0x7f080010;
+        public static final int BSelectBlue=0x7f080016;
+        public static final int BSendCmd=0x7f08000d;
+        public static final int BSendData=0x7f08000b;
+        public static final int BSetAutoOff=0x7f08000a;
+        public static final int BWriteFlash=0x7f08000f;
+        public static final int BclearReceiveData=0x7f080012;
         public static final int Bconnect=0x7f080003;
         public static final int BdisConnect=0x7f080004;
-        public static final int ESSreceive=0x7f080013;
-        public static final int ESendData=0x7f08000b;
-        public static final int EWriteFlash=0x7f080010;
-        public static final int Ereceive=0x7f080014;
-        public static final int deviceTextView=0x7f080016;
-        public static final int menu_settings=0x7f080017;
+        public static final int ESSreceive=0x7f080014;
+        public static final int ESendData=0x7f08000c;
+        public static final int EWriteFlash=0x7f080011;
+        public static final int Ereceive=0x7f080015;
+        public static final int deviceTextView=0x7f080017;
+        public static final int menu_settings=0x7f080018;
         public static final int spinner1=0x7f080002;
-        public static final int spinner2=0x7f08000d;
+        public static final int spinner2=0x7f08000e;
         public static final int textView2=0x7f080000;
     }
     public static final class layout {
