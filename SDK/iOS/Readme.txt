@@ -1,4 +1,7 @@
-﻿2017/05/24
+2018/03/19
+	Update lib to 1.32.4
+	1.32.4 - After updating to latest iOS, if open app first, after insert reader, then the reader communication give errors. 1.32.4 fix this issue.
+2017/05/24
 	Update lib to 1.32.3
 	1.32.3 - Fix bR301 issue when switch App to background, at this time do replug card, the lib doesn't response in time.
 	       - Add customer OEM API to switch auto turn off function, the function is no communication data between App with reader, then the reader will do turn off automatically
