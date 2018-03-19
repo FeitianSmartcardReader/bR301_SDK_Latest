@@ -1,3 +1,5 @@
+2017/09/05
+	Update Android SDK, Add new API setAutoOff, the new API using for OEM customer for battery saving
 2016/04/18
 	Rearrange the SDK
 	Update iOS SDK, add get reader type API - FtGetCurrentReaderType.

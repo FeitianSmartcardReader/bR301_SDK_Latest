@@ -160,6 +160,13 @@
                     android:layout_height="wrap_content"
                     android:text="GetSerialNum"
                     android:textSize="20dip" />
+                
+                <Button
+                    android:id="@+id/BSetAutoOff"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:text="SetAutoOff"
+                    android:textSize="20dip" />
             </LinearLayout>
 
             <LinearLayout
