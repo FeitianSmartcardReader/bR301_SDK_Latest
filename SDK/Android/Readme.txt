@@ -1,3 +1,7 @@
+2018/06/25
+	Recently, we release combo SDK for bR301, iR301, bR301BLE and bR500, also with all Feitian PC readers.
+	So please go to the https://github.com/FeitianSmartcardReader/FEITIAN_MOBILE_READERS
+	This new combo lib also will compatible with current SDK.
 2017/09/05
 	Update Android SDK
 2016/10/17

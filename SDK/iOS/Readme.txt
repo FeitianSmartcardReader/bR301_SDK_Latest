@@ -1,3 +1,6 @@
+﻿2018/06/25
+	Update lib to 1.32.5
+	1.32.5 - Solved a timeout issue, the behave is when send command to card to generate key pair in smart card, normally, it takes couple seconds, at this time, the SDK got mess data from reader, now add code to handle the mess data
 2018/03/19
 	Update lib to 1.32.4
 	1.32.4 - After updating to latest iOS, if open app first, after insert reader, then the reader communication give errors. 1.32.4 fix this issue.
