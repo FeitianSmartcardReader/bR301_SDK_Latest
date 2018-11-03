@@ -9,7 +9,9 @@ For mobile platform, the open source demo code can found in:
 https://github.com/FeitianSmartcardReader/bR301_Android
 https://github.com/FeitianSmartcardReader/bR301_iOS
 
-[Notice] Before using bR301 driver, please make sure your reader firmware is latest one. The driver support bR301 firmware 2.0+ 
+[Notice]
+	Before using bR301 driver, please make sure your reader firmware is latest one. The driver support bR301 firmware 2.0+ 
+	If you are using Windows 10, please make sure the version is not 1703, we found a compitable issue in 1703, and it solved by Microsoft in 1803. 
 
 The current reader only support 1 bR301 with bluetooth connection on PC, please keep one bR301 with bluetooth connection on Windows.
 
