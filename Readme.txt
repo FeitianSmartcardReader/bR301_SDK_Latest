@@ -1,4 +1,8 @@
 # bR301_SDK_Latest
+
+For iOS and Android, please using latest SDK from below repo:
+https://github.com/FeitianSmartcardReader/FEITIAN_MOBILE_READERS
+
 2018/06/25 Update iOS SDK, release lib 1.32.5
 2018/06/25 We do update android SDK to https://github.com/FeitianSmartcardReader/FEITIAN_MOBILE_READERS, in future, will do maintain with combo SDK
 2018/03/19 Update iOS SDK, release lib 1.32.4
